@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://npmcdn.com/contentful@3.3.5/browser-dist/contentful.js "></script>
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-N2PWT8T');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../assets/css/style.css?v=Mar-16-v1" rel="stylesheet" />
+    <title>Supplier Code of Conduct | Upbound Group, Inc.</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/Upbound favicon - 32x32[1713].png" />
+</head>
+
+<body class="pt-lg-5">
+    <!-- Google Tag Manager (noscript) --><noscript><iframe
+            src=https://www.googletagmanager.com/ns.html?id=GTM-N2PWT8Theight="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) -->
+    <div style="background-color: #35323d;" id="header"
+        class="header_section fixed-top header-transparent d-none d-lg-block d-xl-block">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg bg-transparent" style="padding-bottom: 10px !important;">
+                <div class="logo"><a href="/index.html"><img src="../assets/images/Upbound-logo.png?v=Mar-16-v1"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbar" class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/brand.html">Brands</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://investor.rentacenter.com/" target="_blank">Investors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://raccareers.com/" target="_blank">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Mobile & Tab -->
+    <nav style="z-index: 11; background-color: #35323d; height: 85px;"
+        class="navbar d-block d-sm-block d-md-block d-lg-none d-xl-none w-100 navbar-expand-lg navbar-dark ">
+        <button class="ms-2 mt-2 mt-lg-3 border-0 navbar-toggler" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand custom-center" href="/index.html"><img class="outer-logo"
+                src="../assets/images/Upbound-logo.png?v=Mar-16-v1" /></a>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-body left-menu">
+
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                        <div class="container d-flex flex-lg-column justify-content-center align-items-center">
+                            <a class="navbar-brand" href="/index.html"><img
+                                    src="../assets/images/Upbound-logo.png?v=Mar-16-v1" /></a>
+                        </div>
+                    </h5>
+                    <!-- <button type="button" class="btn-close text-reset" style="background-color: white;"
+                        data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+                </div>
+                <div class="d-flex flex-column mt-3 px-4">
+                    <a class="text-dark mt-3" href="/index.html">Home</a>
+                    <a class="text-dark mt-3" href="/brand.html">Brands</a>
+                    <a class="text-dark mt-3" href="https://investor.rentacenter.com/" target="_blank">Investors</a>
+                    <a class="text-dark mt-3" href="https://raccareers.com/" target="_blank">Careers</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- <div class="legal_pages container">
+		<div class="heading-banner container px-3 px-lg-5 d-none d-lg-block d-xl-block">
+			<h2 class="mb-5"><span>California Privacy Policy</span></h2>
+		</div>
+		<div
+			class="heading-banner container px-3 px-lg-5 d-block d-sm-block d-md-block d-lg-none d-xl-none text-center">
+			<h4 class="mb-5"><span>California Privacy Policy</span></h4>
+		</div>
+	</div> -->
+    <div class="container px-3 px-lg-5 d-flex py-5 justify-content-center align-content-center">
+        <div class="container left  align-content-center align-items-center d-flex" style="width:50%">
+            <div class="left-line" style="height: 2px; background-color: #b1ff33;  width: 100%"></div>
+        </div>
+        <div class="container title text-center" style="width:100%; padding: 10px;">
+            <span class="title-text">
+                Supplier Code of Conduct
+            </span>
+        </div>
+        <div class="container right  align-content-center d-flex  align-items-center" style="width:50%">
+            <div class="left-line" style="height: 2px; background-color: #b1ff33; width: 100%;"></div>
+        </div>
+    </div>
+    <div class="privacy_policy container">
+        <div class="container px-3 px-lg-5">
+            <h5>Upbound Group, Inc. Supplier Code of Conduct</h5>
+            <br>
+            <h5 style="font-size: 30px;">INTRODUCTION</h5>
+            <h5>Purpose</h5>
+            <p>This Supplier Code of Conduct (the 'Code') applies to all Suppliers (defined below) of Upbound Group,
+                Inc. (formerly known as Rent-A-Center, Inc.), and its subsidiaries, affiliates and divisions,
+                (collectively, the 'Company'). The Company is committed to acting ethically and responsibly, and has
+                adopted this Code to help reduce the risk of unethical and illegal conduct by providing a clear
+                statement of the high standards the Company expects its Suppliers to follow. Should you have any
+                questions regarding this Code, please contact the Company's Compliance Officer listed below.</p>
+            <h5>Who is Covered</h5>
+            <p>All suppliers, manufacturers, contractors, joint venture partners, agents, distributors and consultants
+                (collectively, and together with any affiliates, subcontractors, independent contractors and employees
+                of the foregoing, 'Suppliers') of the Company, or any other party to a contract which incorporates this
+                Code by reference, are expected to comply with the expectations and standards set forth in this Code.
+            </p>
+            <h5>Amendments and Updates</h5>
+            <p>This Code may be occasionally amended in the Company's sole discretion. The Company will either provide
+                the updated Code to Supplier or make the current version accessible from the Company's corporate
+                website.</p>
+            <br>
+            <h5 style="font-size: 30px;">STANDARDS</h5>
+            <h5>Legal Compliance</h5>
+            <p>Suppliers shall comply with all applicable laws and regulations, including all applicable local, state,
+                provincial and national laws, codes, rules and regulations in any jurisdiction in which such Supplier
+                does business, as well as all applicable treaties and international standards (collectively, 'Laws').
+                Suppliers must also comply with any published standards for their industry.</p>
+            <h5>Ethical Dealings</h5>
+            <p>Suppliers are expected to compete fairly for the Company's business. Suppliers shall not pay, solicit, or
+                receive bribes, kickbacks, or give or receive gifts or anything of value to the Company or any of its
+                directors, officers or employees or to any third party (including any governmental official), in
+                exchange for business opportunities or to secure an improper benefit or advantage.
+            </p>
+            <p>Suppliers are expected to avoid all forms of corruption. Regardless of where in the world Suppliers are
+                located, they are expected to comply with the Foreign Corrupt Practices Act and any similar applicable
+                Laws.
+            </p>
+            <h5>Health Safety and Environmental</h5>
+            <p>Suppliers are expected to provide clean, safe and healthy work environments that focus on accident
+                prevention, and minimizing health risks. Suppliers shall comply with applicable workers health and
+                safety Laws.</p>
+            <p>Suppliers shall comply with all applicable environmental Laws and obtain and maintain environmental
+                permits and timely file required reports. Suppliers are expected to conduct their operations in an
+                environmentally responsible manner and minimize harmful impacts to surrounding communities, including
+                through proper handling and disposition of hazardous materials and monitoring, controlling and treating
+                discharges generated from operations.</p>
+            <h5>Human Rights and Employment Practices</h5>
+            <p>Suppliers are expected to treat their employees and contractors with fairness, respect and dignity and
+                promote a work environment that is safe and healthy, and free of discrimination, harassment, forced
+                labor, corporal punishment or other forms of physical coercion.</p>
+            <p>Suppliers shall compensate their employees with wages and benefits which are in compliance with
+                applicable Laws. Suppliers shall comply with all applicable Laws governing maximum work hours, vacation
+                time, leave periods and holidays, and to provide compensation for overtime hours and mandated benefits
+                in accordance with applicable Laws. If such Laws do not address standard working hours, Suppliers are
+                expected to ensure that work hours are not excessive or unfair.</p>
+            <p>Suppliers shall not use child labor. Child labor is defined for these purposes as the employment of any
+                person at any age younger that the legal minimum age for working in any applicable jurisdiction.</p>
+            <p>Suppliers shall not discriminate on the basis of race, color, national origin, gender, religion,
+                disability, sexual orientation or other similar factors in their employment practices.</p>
+            <p>Suppliers shall respect the right of employees to freely associate, organize, and bargain collectively in
+                accordance with applicable Laws.</p>
+            <p>Suppliers shall only employ workers with the legal authorization to work and to ensure that authorization
+                has been validated by the appropriate legal documentation.</p>
+            <p>Suppliers shall not place restrictions on its workers' voluntary ending of their employment, including
+                the use of excessive notice periods or substantial fines for terminating their employment contracts.</p>
+            <p>Supplier shall allow workers to maintain control over, or have free access to, their identity documents,
+                including passports and national identification cards.</p>
+            <h5>Record Keeping; Controls</h5>
+            <p>Suppliers are expected to keep accurate, complete, transparent and timely financial and operational
+                books, records, and accounts and maintain a system of effective internal controls. Suppliers are
+                expected to maintain all financial books, records and accounts in accordance with applicable Laws and
+                generally accepted accounting principles, including documentation related to safety and source material
+                traceability.</p>
+            <p>Suppliers and their directors, officers, and employees shall comply with all applicable Laws regarding
+                insider trading, including prohibitions against buying or selling securities or advising (e.g., tipping)
+                others to buy or sell securities based on material, nonpublic information relating to the Company.</p>
+            <p>Suppliers shall comply with all applicable laws prohibiting money laundering and require the reporting of
+                any suspicious transactions.</p>
+            <h5>Confidential Information: Intellectual Property</h5>
+            <p>Suppliers shall safeguard the Company's confidential information by keeping it secure (even after the
+                Company's and Supplier's business relationship ends), and are expected to limit access to the Company's
+                confidential information to those who have a need to know in order to perform their job duties.
+                Suppliers should avoid discussion of Confidential Information in public areas or on social networking
+                platforms.</p>
+            <p>Suppliers shall respect the intellectual property rights of third parties and especially the Company.
+                Suppliers are expected to promptly report any suspected infringement of the Company's intellectual
+                property by others, or potential infringement by the Company of other's intellectual property rights, to
+                the Company.</p>
+            <h5>Gifts and Entertainment</h5>
+            <p>The Company's directors, officers and employees are prohibited from accepting any gift, favor or
+                entertainment if it will obligate or appear to obligate the recipient or otherwise influence any
+                business decision. Suppliers shall not offer Company directors, officers, employees any gift, favor or
+                entertainment that would violate this prohibition and to never offer Company directors, officers or
+                employees gifts of cash or cash equivalents, such as gift cards. This provision is in addition to and
+                not in lieu of any separate Gifts and Entertainment policy the Company may promulgate. In the event of a
+                conflict, the more restrictive policy shall apply, provided notice of such policy is given to Vendor.
+            </p>
+            <h5>Conflicts of Interest</h5>
+            <p>The Company's directors, officers and employees are expected to act in the best interest of the Company
+                and to have no interest with any Supplier that might conflict, or appear to conflict, with that
+                obligation. Suppliers shall disclose to the Company any relationship it may have with a Company
+                director, officer or employee, (or family members or close personal friends of the foregoing) which
+                gives the appearance of, or might represent, a conflict of interest.</p>
+            <h5>Trade Controls; Conflict Minerals; Terrorism</h5>
+            <p>Suppliers shall comply with all export controls, economic sanctions, and anti-boycott laws applicable to
+                their work with and for the Company.</p>
+            <p>Suppliers shall have a policy to prevent the use of materials sourced through any illegal and unethical
+                ways. (e.g., minerals sourced from mines controlled by armed groups, fibers sourced from logging in high
+                conservation value forest areas or prohibited areas). As part of, or in addition to such policy,
+                Suppliers shall have a conflict minerals policy and establish reliable systems to assure that the
+                tantalum, tin, tungsten and gold (collectively 3TG) in the products, parts, components and/or materials
+                that they manufacture for or supply to the Company (collectively 'Company supplied products') do not
+                directly or indirectly finance or benefit armed groups that are perpetrators of serious human rights
+                abuses in the Democratic Republic of the Congo or an adjoining country. Suppliers shall exercise due
+                diligence on the source and chain of custody of 3TG in Company supplied products and make their due
+                diligence measures available to Company upon request. Suppliers shall also respond promptly to Company
+                requests for information regarding the results of their due diligence, including but not limited to the
+                country of origin or smelters and refiners of 3TG in Company supplied products.</p>
+            <p>Suppliers shall confirm that neither they, nor any of their directors, officers or employees, are
+                included on any lists of terrorists or terrorist organizations compiled by the United States government
+                or any other national or international body, including, but not limited to:</p>
+            <ul style="margin-left:40px;">
+                <li>The U.S. Treasury Department's Specially Designated Nationals List;</li>
+                <li>The U.S. State Department's Terrorist Exclusion List;</li>
+                <li>The United Nations List Pursuant to Security Council Resolution 1390 (2002) and Paragraphs 4(B) or
+                    Resolution 1267(1999) and 8(C) of Resolution 1333 (2000); and</li>
+                <li>The European Union List Implementing Article (2)(3) of Regulation (EC) No. 2580/2001 on Specific
+                    Restrictive Measures Directed Against Certain Persons and Entities with a View to Combating
+                    Terrorism.</li>
+            </ul>
+            <p>Facilities</p>
+            <p>Supplier shall obtain and maintain valid zoning permits as required by applicable law. Supplier shall
+                disclose the use of all subcontracting activity, and shall not use subcontracted facilities without
+                prior authorization by Company.</p>
+            <h5>Compliance; Assessments; Waiver</h5>
+            <p>Failure by any Supplier to comply with any of these expectations and standards will require the Supplier
+                to take immediate action to correct the deficiency and may result, in the Company's sole discretion, in
+                the termination of the contract(s) between the Company and Supplier. Suppliers are expected to cooperate
+                with the Company and allow the Company or its designee to conduct audits to verify compliance with this
+                Code or other required certifications. In the event any deficiencies are identified as a result of any
+                such audit, Supplier shall promptly take the steps necessary to correct any deficiency to the Company's
+                satisfaction. No action or inaction by the Company shall be construed as a waiver of any rights
+                contained herein or the applicability of this Code to any other Supplier.</p>
+            <h5>Reporting Concern</h5>
+            <p>Any questions or concerns, or suspicion that any Supplier may have violated this Code or otherwise
+                engaged in illegal or improper conduct, should be immediately reported to the Company by contacting the
+                Company's Compliance Officer at compliance@rentacenter.com. Suppliers are expected to provide assistance
+                to the Company in the investigation of any concerns involving the Company or a Supplier. Because Company
+                policy prohibits retaliation against any person reporting any concerns regarding a violation of this
+                Code, please immediately report any instances of suspected retaliation.</p>
+            <h5>Application</h5>
+            <p style="padding-bottom: 60px;">This Code is a general statement of the Company's expectations with respect
+                to its Suppliers and is in
+                addition to, not in lieu of, any Supplier obligations as set forth in any request for proposal or other
+                solicitation or any agreement between the Company and a Supplier. In the event of any conflict between
+                this Code and any such request for proposal, solicitation or applicable agreement the terms of such
+                request for proposal, solicitation or applicable agreement shall control as to the Code.</p>
+        </div>
+    </div>
+    <div class="footer py-5">
+        <div class="container">
+            <div class="container px-3 px-lg-5 footer-head">
+                <div class="row footer-content g-4">
+                    <div class="col-lg-10 col-md-12 d-none d-lg-block">
+                        <div class="d-flex flex-row gap-5">
+                            <a href="/index.html">Home</a>
+                            <a href="/brand.html">Our Brands</a>
+                            <a href="https://raccareers.com/" target="_blank">Careers</a>
+                            <a href="https://investor.rentacenter.com/" target="_blank">Investor Relations</a>
+                            <a href="https://www.rentacenter.com/en/accessibility" target="_blank">Accessibility</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12">
+                        <div class="social-icons text-md-start text-lg-end">
+                            <!-- <a id="facebookLink" target="_blank"><img src="/assets/images/Facebook.png" /></a>
+                                <a id="instagramLink" target="_blank"><img src="/assets/images/Instagram.png" /></a>
+                                <a id="twitterLink" target="_blank"><img src="/assets/images/Twitter.png" /></a>
+                                <a id="youtubeLink" target="_blank"><img src="/assets/images/Youtube.png" /></a> -->
+                            <a id="linkedInLink" target="_blank"><img src="/assets/images/Linkedin.png" /></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row justify-content-between mobile_view_footer d-lg-none"
+                    style="margin-top: 48px;">
+                    <div class="d-flex flex-column">
+                        <a href="/index.html" style="padding-bottom: 24px;">Home</a>
+                        <a href="https://raccareers.com/" target="_blank" style="padding-bottom: 24px;">Careers</a>
+                        <a href="https://www.rentacenter.com/en/accessibility" target="_blank">Accessibility</a>
+                    </div>
+                    <div class=" mob-right-menu d-flex flex-column">
+                        <a href="/brand.html" style="padding-bottom: 24px;">Our Brands</a>
+                        <a href="https://investor.rentacenter.com/" target="_blank">Investor Relations</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container px-3 px-lg-5 mt-4">
+            <div class="container footer-desc">
+                <p id="footerDescription"></p>
+            </div>
+         </div> -->
+        <div class="container px-3 px-lg-5 py-lg-4">
+            <div class="container">
+                <div class=" mobile_view_footer-link d-lg-none d-flex flex-wrap mt-5">
+                    <p>
+                        <a href="/en/privacy_policy.html" target="_blank">Privacy Policy</a>
+                    <div class="px-2">
+                        <div class="vl "></div>
+                    </div>
+                    </p>
+                    <p>
+                        <a href="/en/california_privacy_policy.html" target="_blank">California Privacy Policy</a>
+                    <div class="px-2">
+                        <div class="vl "></div>
+                    </div>
+                    </p>
+                    <p>
+                        <a href="/en/california_supply_chains_act.html" target="_blank">California Supply Chains Act</a>
+                    <div class="px-2">
+                        <div class="vl "></div>
+                    </div>
+                    </p>
+                    <p>
+                        <a href="/en/do_not_sell.html" target="_blank">Do Not Sell my Personal Information</a>
+                    </p>
+                </div>
+                <div class="copy-right d-flex flex-column">
+                    <div class="privacy-footer d-lg-flex  py-lg-3 d-none  ">
+                        <p style="    margin-right: 7px;">
+                            <a href="/en/privacy_policy.html" target="_blank">Privacy Policy</a>
+                        <div class="vl "></div>
+                        </p>
+                        <p class=" px-lg-2">
+                            <a href="/en/california_privacy_policy.html" target="_blank">California Privacy Policy</a>
+                        <div class="vl"></div>
+                        </p>
+                        <p class=" px-lg-2">
+                            <a href="/en/california_supply_chains_act.html" target="_blank">California Supply Chains
+                                Act</a>
+                        <div class="vl"></div>
+                        </p>
+                        <p class="px-lg-2 ">
+                            <a href="/en/do_not_sell.html" target="_blank">Do Not Sell my Personal Information</a>
+                        </p>
+                    </div>
+                    <div class="copy-right-logo d-flex  mt-lg-4">
+                        <a href="/index.html">
+                            <img href="/index.html" src="../assets/images/Upbound-dark-logo.png?v=Mar-16-v1" />
+                        </a>
+                        <p class="px-lg-2 py-lg-3 ">
+                            &copy 2023 Upbound Group, Inc., All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/brand.js?v=Mar-16-v1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
